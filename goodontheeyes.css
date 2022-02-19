@@ -1,0 +1,70 @@
+body, html {
+    -webkit-font-smoothing: antialiased;
+    background-color: #f4f7ff;
+    height: 100%;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+  }
+
+@keyframes loading {
+    0% {
+      cy: 10;
+    }
+    25% {
+      cy: 3;
+    }
+    50% {
+      cy: 10;
+    }
+  }
+  
+  canvas {
+    height: 100vh;
+    pointer-events: none;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  #button {
+    background: none;
+    border: none;
+    color: #f4f7ff;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    left: 50%;
+    outline: none;
+    overflow: hidden;
+    padding: 0 10px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 50px;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 1;
+  }
+  #button::before {
+    content: "";
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    transition: width 0.2s cubic-bezier(0.39, 1.86, 0.64, 1) 0.3s;
+    width: 100%;
+  }
+  
+  #button2 {
+    left: 50%;
+    outline: none;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    transform: translate(-65%, -60%);
+    width: 400px;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 1;
+  }
